@@ -1,0 +1,324 @@
+/* Header Section */
+.logo-p1,
+.logo-p2 {
+  display: inline;
+}
+
+.logo-p3,
+.logo-p4 {
+  display: inline;
+}
+
+.logo-p1 {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.logo-p2 {
+  text-decoration: underline #c6e3dd;
+  font-size: 1.5em;
+  text-decoration-thickness: 5px;
+  color: #575757;
+}
+
+.logo-p3,
+.logo-p4 {
+  font-size: 0.9em;
+}
+
+.logo-p4 {
+  font-weight: bold;
+}
+
+.headerElement-margin {
+  margin-left: 60px;
+}
+
+.rounded-corners {
+  border-radius: 25px;
+  padding: 20px;
+  width: 45%;
+  height: 50px;
+}
+.search-button {
+  background-color: #fff;
+  border: none;
+  position: relative;
+  right: 60px;
+}
+
+
+/* Containers */
+
+.container-top {
+  padding: 5% 0% 8% 0%;
+}
+
+/* Patient Section */
+
+.gradient-column {
+  background-color: midnightblue; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #091527, #006b97);
+}
+
+.logo-column {
+  background-color: #05172b;
+}
+
+.patient-image {
+  position: absolute;
+  left: 30%;
+  bottom: 0;
+}
+
+.patient-text-container {
+  padding: 5% 0% 10% 20%;
+}
+
+.logo-text1 {
+  color: white;
+  margin-bottom: 0px;
+}
+
+.logo-text2 {
+  color: white;
+}
+
+h5 {
+  color: white;
+}
+
+/* Pills section */
+
+.pills-image {
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: 10%;
+}
+
+/* Circle section */
+
+.circle-headline {
+  color: #1d72a7;
+  font-weight: bold;
+  text-align: center;
+}
+
+.circle-images {
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.circle-link {
+  font-weight: bold;
+  color: #c733ad;
+  text-align: center;
+}
+
+.circle-paragraphs {
+  text-align: center;
+}
+
+/* Genetics section */
+.genetics-list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.genetics-button {
+  border-radius: 25px;
+  padding: 10px;
+  width: 45%;
+  color: white;
+  font-weight: bold;
+  background-color: #c733ad;
+  border: none;
+  margin-top: 10px;
+}
+
+.genetics-image {
+  display: block;
+  width: 100%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.genetics-headline {
+  font-weight: bold;
+  color: #00609c;
+  font-size: 1.4em;
+  margin-right: 20%;
+}
+
+
+/* Clinical section */
+
+.grey-clinical {
+background-color: #eeedee;
+margin: 1%;
+padding: 0% !important;
+}
+
+.clinical-image {
+  width: 100%;
+  padding: 0%;
+}
+
+.clinical-paragraph {
+  padding: 3% 0% 3% 0%;
+}
+
+.clinical-box {
+  padding: 6%;
+  text-align: left;
+}
+
+.clinical-link {
+  font-weight: bold;
+  color: #c733ad;
+ 
+}
+
+.clinical-headline {
+  font-weight: bold;
+  color: #00609c;
+  font-size: 1.4em;
+  margin-left: -15px;
+}
+/* Footer Section */
+
+.footer {
+  bottom: 0;
+
+  background-color: #00609c;
+  padding: 6% 0% 3% 0%;
+}
+
+.copyright-text {
+  text-align: right;
+  color: white;
+  margin: 5px;
+}
+
+.footer-icon {
+  margin-left: 40%;
+  padding: 0% 0% 12% 0%;
+}
+
+.footer-list {
+  text-align: center;
+  bottom: 0px;
+  position: absolute;
+  margin-bottom: 0px;
+}
+
+.footer-list li {
+  display: inline-block;
+}
+
+.footer-list li a {
+  color: white !important;
+  opacity: 0.5;
+}
+
+.footer-list li + li:before {
+  content: " | ";
+  padding: 0 5px;
+  color: white;
+  opacity: 0.5;
+}
+
+.footer-link {
+  color: white !important;
+  text-decoration: underline;
+  float: right;
+  margin-bottom: 10px;
+}
+
+/* Videos section */
+
+.videos-headline {
+  font-weight: bold;
+  color: #00609c;
+  font-size: 1.4em;
+}
+
+
+.video-paragraph {
+  width: 260px;
+
+}
+/* References section */
+
+.references {
+  background-color: #e5e4e5;
+  padding: 2% 6%;
+}
+
+.references-button {
+  border-radius: 50%;
+  height:40px;
+  width: 40px;
+  background-color: #00609c;
+  color: white;
+  border: none;
+  display: inline;
+}
+
+.references-paragraph {
+  display: inline;
+  color: #00609c;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.reference-links {
+  display: block;
+  padding-top: 5px;
+  color: #00609c;
+
+}
+
+.reference-links:first-child {
+  margin-top: 15px;
+}
+
+
+
+/* Sections */
+
+.white-section {
+  background-color: #fff;
+  padding: 6% 6%;
+}
+
+.grey-section {
+  background-color: #eeedee;
+  padding: 6% 6%;
+}
+
+
+/* Fonts */
+.information-headline {
+  font-weight: bold;
+  color: #00609c;
+  font-size: 1.2em;
+}
+
+/* cTA section */
+
+@media (max-width: 1028px) {
+  .gradient-column {
+    height: 328px;
+  }
+}
+
+@media (max-width: 700px) {
+  .patient-image {
+    width: 70%;
+  }
+}

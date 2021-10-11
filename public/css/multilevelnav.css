@@ -1,0 +1,109 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,900,800,700,600,500,300,200,100);
+.clearfix:after, .menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.MultiLevelMenu {
+  width: 100%;
+  position: relative;
+  color: #000;
+}
+.menu {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.MultiItem:hover > .MultiLevelMenu {
+  display: block;
+}
+.MultiItem:hover > .MultiLink {
+  z-index: 1;
+}
+
+.MultiLink {
+    color: inherit;
+    display: block;
+    font-family: "Raleway",sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 20px;
+    position: relative;
+    text-decoration: none;
+	color:#000;
+}
+
+.MultiLink:before, .MultiLink:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 60%;
+  background-color: transparent;
+  position: align-self;
+  position: absolute;
+  z-index: -1;
+  bottom: -6px;
+}
+.MultiLink:before {
+  left: 0px;
+  -webkit-transform: skewY(-14deg) translateX(-100%) translateY(-50%);
+          transform: skewY(-14deg) translateX(-100%) translateY(-50%);
+}
+.MultiLink:after {
+  right: 0px;
+  -webkit-transform: skewY(14deg) translateX(100%) translateY(-50%);
+          transform: skewY(14deg) translateX(100%) translateY(-50%);
+}
+
+.MultiLevelMenu.depth-1 {
+  display: block;
+  background-color: #fff;
+  float:left;
+  margin-bottom:2em;
+}
+.MultiLevelMenu.depth-1 > .menu > .MultiItem {
+  float: left;
+}
+.MultiLevelMenu.depth-1 > .menu > .MultiItem:hover {
+  color: #fff;
+}
+.MultiLevelMenu.depth-1 > .menu > .MultiItem > .MultiLink:hover, .MultiLevelMenu.depth-1 > .menu > .MultiItem > .MultiLink:focus {
+  font-weight: bold;
+  color: black !important;
+  text-decoration: none;
+}
+
+.MultiLevelMenu.depth-2 {
+  display: none;
+  background-color: #e5e4e5;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.MultiLevelMenu.depth-2 > .menu > .MultiItem {
+  float: left;
+  position: relative;
+}
+.MultiLevelMenu.depth-2 > .menu > .MultiItem:hover {
+  color: #fff;
+}
+
+
+/*
+* Debug code
+*/
+.debug-visibility .MultiItem:hover > .MultiLink:before,
+.debug-visibility .MultiItem:hover > .MultiLink:after {
+  background-color: rgba(255, 0, 0, 0.6);
+}
